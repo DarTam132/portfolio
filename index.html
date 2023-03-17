@@ -1,12 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="app.js"></script>
-    <title>Darius Portofolio</title>
-  </head>
-  <body></body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Darius Tamasan Portfolio Website</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        >
+        <linkd
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+        >
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+            crossorigin="anonymous"
+        />  
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,400,900&display=swap"
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="style.css">
+        <script defer src="index.js"></script>    
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/portofolio-logo-1.PNG" alt="website-logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills & Tools</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">My Work</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Darius Tamasan</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img
+                src="img/darius-tamasan-01.jpg"
+                alt="a picture of Darius Tamasan"
+                class="intro__img"
+            />
+        </section>
+        
+        <!-- My skills -->
+        <section class="my-skills" id="skills">
+            <div class="section__title--container">
+                <h2 class="section__title section__title--skills">Skills and Tools</h2>
+            </div>
+
+            <p class="section__subtitle section__subtitle--skills">The skills, tools and technologies I use to bring your products to life:</p>
+
+            <div class="skills">
+                <div class="skill">
+                    <i class="devicon-html5-plain" aria-hidden="true"></i>
+                    <span>HTML5</span>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-css3-plain" aria-hidden="true"></i>
+                    <span>CSS3</span>
+                </div>
+
+                <div class="skill">
+                    <i class="devicon-javascript-plain" aria-hidden="true"></i>
+                    <span>JavaScript</span>
+                </div>
+                
+                <div class="skill">
+                    <i class="devicon-react-original" aria-hidden="true"></i>
+                    <span>React</span>
+                </div>
+   
+                <div class="skill">
+                    <i class="devicon-git-plain" aria-hidden="true"></i>
+                    <span>Git</span>
+                </div>
+                
+                <div class="skill">
+                    <i class="devicon-github-original" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                </div>
+                
+                <div class="skill">
+                    <img src="./skill-logos/icon-tablet-phone-and-browser.svg" aria-hidden="true" />
+                    <span>Responsive Websites</span>
+                </div>
+                
+                <div class="skill">
+                    <i class="devicon-vscode-plain" aria-hidden="true"></i>
+                    <span>VS Code</span>
+                </div>
+            </div> <!-- / skills -->
+
+            <div class="skills-wip">
+                <p class="section__subtitle section__subtitle--skills">Currently working on:</p>
+                <p>Getting better at <strong>React</strong>.<br />Improving my skills and understanding of <strong>SASS</strong> and <strong>state management in JavaScript</strong>.</p>
+            </div>
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Aerospace engineer turned <strong>Frontend developer</strong></p>
+           
+           <div class="about-me__body">
+                <p>
+                    I am a
+                    <span
+                    class="txt-rotate"
+                    data-period="2000"
+                    data-rotate='[ "developer.", "video-editor.", "film-maker.", "photographer.", "problem-solver.", "husband.", "dad.", "foodie.", "travel geek.", "melomaniac.", "coffee fanatic." ]'
+                    ></span>
+                </p>
+               <p>I describe myself as a fast learning <strong>problem solver</strong>. I always enjoyed working on projects where I could use my <strong>technical skills</strong> and <strong>creativity</strong> together. I also come from a technical field, namely aerospace engineering. I had some tangents with programming in college, but too little. I wished to assimilate more this field so I enrolled in the IT courses of the informal IT school.</p>
+               <p>I happily discovered that I could code during these courses. I joined <strong><a href="https://scoalainformala.ro/" target="_blank">The Informal School of IT</a></strong> for a Intro in IT course and after the third or fourth lesson, things "clicked". I was able to understand all the new concepts but also able to explain them to fellow studends who were struggling. After that, I joined the JavaScript course also at Ths Informal Schoold of IT and also took some courses from <strong> <a href="https://www.udemy.com/course/the-complete-javascript-course/" target="_blank">Udemy</a></strong>, which took my coding skills to the next level.</p>
+               <p>Now I am ready to continue my journey and be part of a Frontend Development Team.</p>
+           </div>
+           
+           <img
+                src="img/darius-tamasan-02.jpg"
+                alt="Photo of Darius Tamasan"
+                class="about-me__img"
+            />
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <div class="container">
+                <div class="section__title--container">
+                    <h2 class="section__title section__title--work">My work</h2>
+                </div>
+                <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+                
+                <div class="portfolio">
+                    <!-- Portfolio item 01 -->
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__image-section">
+                            <img
+                                src="img/portfolio-item-01.jpg"
+                                class="portfolio__item__img"
+                                alt="portfolio-item-1"
+                            />
+                        </div>
+                        <div class="portfolio__item__description">
+                            <h3 class="portfolio__item__title">
+                                Omnifood
+                            </h3>
+                            <p class="portfolio__item__body">
+                                This is my first website made with the help of an udemy course. 
+                            </p>
+                            <p class="portfolio__item__body">
+                                This project contains a basic HTML structure, some advanced CSS concepts such as using Flex and Grid layouts. The website uses a responsive design. It contains a little bit of JavaScript for the navigation. 
+                            </p>
+                           
+                            <p class="portfolio__item__body">
+                                <em>Languages used</em>: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>
+                            </p>
+                            <div class="portfolio__item__btns">
+                                <a
+                                    href="https://github.com/DarTam132/firstsite-omnifood"
+                                    class="btn"
+                                    target="_blank"
+                                    role="button"
+                                >
+                                    View code
+                                </a>
+                                <a
+                                    href="https://dartam132.github.io/firstsite-omnifood/"
+                                    class="btn btn--secondary"
+                                    target="_blank"
+                                    role="button"
+                                >
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio item 02 -->
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__image-section">
+                            <img
+                                src="img/portfolio-item-02.jpg"
+                                class="portfolio__item__img"
+                                alt="portfolio-item-2"
+                            />
+                        </div>
+                        <div class="portfolio__item__description">
+                            <h3 class="portfolio__item__title">
+                                CSS work
+                            </h3>
+                            <p class="portfolio__item__body">
+                                I like to call this one CSS work because here I have 70 models done by my self using the <a href="https://cssbattle.dev/ " target="_blank"><strong>CSS Battle</strong></a> platform. As I raised more and more models I tought that it would be a good idea to store them in one plce and here we are. The models uses absolute positioning but also flex and grid layout patterns.
+                               
+                            </p>
+                            <p class="portfolio__item__body">
+                                <em>Languages used</em>: <strong>HTML</strong>, <strong>CSS</strong>
+                            </p>
+                            <div class="portfolio__item__btns">
+                                <a
+                                    href="https://github.com/DarTam132/CSS-Work"
+                                    class="btn"
+                                    target="_blank"
+                                    role="button"
+                                >
+                                    View code
+                                </a>
+                                <a
+                                    href="https://dartam132.github.io/CSS-Work/"
+                                    class="btn btn--secondary"
+                                    target="_blank"
+                                    role="button"
+                                >
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio item 03 -->
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__image-section">
+                            <img
+                                src="img/portfolio-item-03.jpg"
+                                class="portfolio__item__img"
+                                alt="portfolio-item-3"
+                            />
+                        </div>
+                        <div class="portfolio__item__description">
+                            <h3 class="portfolio__item__title">
+                                The todo list
+                            </h3>
+                            <p class="portfolio__item__body">
+                                In this project I did a todo list witch takes the data for your note and after that render the note on the screen but also store the data in an object that is stored in an array. The application keeps track of your note thanks to the localStorage API. 
+                            </p>
+                            <p class="portfolio__item__body">
+                                <em>Languages used</em>: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>
+                            </p>
+                            <div class="portfolio__item__btns">
+                                <a
+                                    href="https://github.com/DarTam132/toDoList-using-localStorage"
+                                    class="btn"
+                                    target="_blank"
+                                    role="button"
+                                >
+                                    View code
+                                </a>
+                                <a
+                                    href="https://dartam132.github.io/toDoList-using-localStorage/"
+                                    class="btn btn--secondary"
+                                    target="_blank"
+                                    role="button"
+                                >
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio item 04 -->
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__image-section">
+                            <img
+                                src="img/portfolio-item-04.jpg"
+                                class="portfolio__item__img"
+                                alt="portfolio-item-4"
+                            />
+                        </div>
+                        <div class="portfolio__item__description">
+                            <h3 class="portfolio__item__title">
+                                Bankist
+                            </h3>
+                            <p class="portfolio__item__body">
+                                This is a bank simulation where I trained with almost all array methods and also with some Web APIs such as geolocation and setTimeout. If you want to check how everything works the accounts are {js,1111}, {jd,2222},{stw,3333} and {ss,4444}.
+                            </p>
+                            <p class="portfolio__item__body">
+                                <em>Languages used</em>: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>
+                            </p>
+                            <div class="portfolio__item__btns">
+                                <a
+                                    href="https://github.com/DarTam132/bankistApp"
+                                    class="btn"
+                                    target="_blank"
+                                    role="button"
+                                >
+                                    View project
+                                </a>
+                                <a
+                                    href="https://dartam132.github.io/bankistApp/"
+                                    class="btn btn--secondary"
+                                    target="_blank"
+                                    role="button"
+                                >
+                                    View Prototype
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio item 05 -->
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__image-section">
+                            <img
+                                src="img/portfolio-item-05.jpg"
+                                class="portfolio__item__img"
+                                alt="portfolio-item-5"
+                            />
+                        </div>
+                        <div class="portfolio__item__description">
+                            <h3 class="portfolio__item__title">
+                                Rock, paper, scissors
+                            </h3>
+                            <p class="portfolio__item__body">
+                                This is a RPS game. The layout is a first try of bootstrap CSS framework. The game is corelating 2 arrays one witch the options of the user and the option of the computer and the other one with the photos of their choice. 
+                            </p>
+                            <p class="portfolio__item__body">
+                                <em>Languages used</em>: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>
+                            </p>
+                            <div class="portfolio__item__btns">
+                                <a
+                                    href="https://github.com/DarTam132/rock-paper-scissors-game"
+                                    class="btn"
+                                    target="_blank"
+                                    role="button"
+                                >
+                                    View code
+                                </a>
+                                <a
+                                    href="https://dartam132.github.io/rock-paper-scissors-game/"
+                                    class="btn btn--secondary"
+                                    target="_blank"
+                                    role="button"
+                                >
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio item 06 -->
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__image-section">
+                            <img
+                                src="img/portfolio-item-06.jpg"
+                                class="portfolio__item__img"
+                                alt="portfolio-item-6"
+                            />
+                        </div>
+                        <div class="portfolio__item__description">
+                            <h3 class="portfolio__item__title">
+                                OOP mapty
+                            </h3>
+                            <p class="portfolio__item__body">
+                                Is my first OOP based application. It uses also the leaflet library. In this project I learned a lot of thing about OOP such as how we can chain the prototype of 2 diferent classes and how they inherit their own methods and how we can implement private parameters and methods in our own classes. In this project I also used localStorage API to store the data that the users is passing in the activity form.
+                            </p>
+                            <p class="portfolio__item__body">
+                                <em>Languages used</em>: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>
+                            </p>
+                            <div class="portfolio__item__btns">
+                                <a
+                                    href="https://github.com/DarTam132/OOP-mapty"
+                                    class="btn"
+                                    target="_blank"
+                                    role="button"
+                                >
+                                    View code
+                                </a>
+                                <a
+                                    href="https://dartam132.github.io/OOP-mapty/"
+                                    class="btn btn--secondary"
+                                    target="_blank"
+                                    role="button"
+                                >
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:darius.tamasan96@gmail.com" class="footer__link">darius.tamasan96@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/darius-tămășan-66aab4183" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/DarTam132" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.facebook.com/darius.radmardtamasan" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/DariusTamasan1" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+      
+
+    </body>
 </html>
