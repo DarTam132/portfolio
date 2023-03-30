@@ -354,6 +354,12 @@ h3 {
   color: var(--clr-accent);
 }
 
+.back {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 50px;
+}
 /*  Intro section  */
 
 .intro {
@@ -670,4 +676,15 @@ about-me__body {
 
 .social-list__link {
   padding: 0.5em;
+}
+
+a:visited {
+  color: #000;
+}
+
+.back__link:active,
+.back__link:visited,
+.css__battle:visited,
+.css__battle:active {
+  color: #fff;
 }

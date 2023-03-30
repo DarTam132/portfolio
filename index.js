@@ -111,7 +111,7 @@ class Particle {
     this.radius = 5;
     //
     this.color = `#6e6161`;
-    this.life = 15;
+    this.life = 5;
     this.alpha = 1;
   }
 
