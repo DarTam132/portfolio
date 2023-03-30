@@ -27,11 +27,11 @@
         <script defer src="index.js"></script>    
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="logo">
-                <img src="img/portofolio-logo-1.PNG" alt="website-logo">
+                <img  src="img/portfolio-logo.jpg" alt="website-logo">
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
+            <button class="nav-toggle hidden" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
             <nav class="nav">
@@ -53,18 +53,22 @@
         </header>
         
         <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Darius Tamasan</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-            <img
+        <div class="section1-container">
+          <canvas id="canvas"></canvas>
+          <section class="intro" id="home">
+              <h1 class="section__title section__title--intro">
+                  Hi, I am <strong>Darius Tamasan</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+                <img
                 src="img/darius-tamasan-01.jpg"
                 alt="a picture of Darius Tamasan"
                 class="intro__img"
-            />
-        </section>
-        
+                />
+            </section> 
+        </div>
+    
+    
         <!-- My skills -->
         <section class="my-skills" id="skills">
             <div class="section__title--container">
@@ -113,7 +117,8 @@
                     <i class="devicon-vscode-plain" aria-hidden="true"></i>
                     <span>VS Code</span>
                 </div>
-            </div> <!-- / skills -->
+            </div> 
+             <!-- skills -->
 
             <div class="skills-wip">
                 <p class="section__subtitle section__subtitle--skills">Currently working on:</p>
@@ -134,7 +139,7 @@
                     <span
                     class="txt-rotate"
                     data-period="2000"
-                    data-rotate='[ "developer.", "video-editor.", "film-maker.", "photographer.", "problem-solver.", "husband.", "dad.", "foodie.", "travel geek.", "melomaniac.", "coffee fanatic." ]'
+                    data-rotate='[ "engineer." ,"web developer.","knowledge addicted." ,"problem-solver.", "husband.", "travel pasionate.", "coffee lover." ]'
                     ></span>
                 </p>
                <p>I describe myself as a fast learning <strong>problem solver</strong>. I always enjoyed working on projects where I could use my <strong>technical skills</strong> and <strong>creativity</strong> together. I also come from a technical field, namely aerospace engineering. I had some tangents with programming in college, but too little. I wished to assimilate more this field so I enrolled in the IT courses of the informal IT school.</p>
@@ -447,7 +452,7 @@
         
         <!-- Footer -->
         <footer class="footer">
-            <!-- replace with your own email address -->
+            
             <a href="mailto:darius.tamasan96@gmail.com" class="footer__link">darius.tamasan96@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
